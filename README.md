@@ -12,7 +12,7 @@ This is a FastAPI-based application that simulates a Product Owner powered by AI
 ## Installation
 1. Clone the repo:
    ```bash
-   git clone https://github.com/your-username/ai-product-owner.git
+   git clone https://github.com/canerskrc/ai-product-owner.git
    cd ai-product-owner
    ```
 2. Install dependencies:
