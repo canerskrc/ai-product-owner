@@ -10,13 +10,16 @@ Original file is located at
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from typing import List, Optional
-import openai
+from openai import OpenAI
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
 # Initialize FastAPI app
 app = FastAPI()
 
-# OpenAI API key configuration
-openai.api_key = "YOUR_OPENAI_API_KEY"
+# Initialize OpenAI client with API key from environment variable
+client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
 
 # Data models
 class Requirement(BaseModel):
@@ -42,15 +45,26 @@ def list_requirements():
 def add_requirement(requirement: Requirement):
     # Simulate AI priority assignment
     try:
-        ai_response = openai.Completion.create(
-            engine="text-davinci-003",
-            prompt=f"Assign a priority (1-10) to the following requirement: {requirement.description}",
-            max_tokens=10
+        if not os.getenv('OPENAI_API_KEY'):
+            raise ValueError("OpenAI API key is not set in environment variables")
+            
+        ai_response = client.chat.completions.create(
+            model="gpt-3.5-turbo",
+            messages=[
+                {
+                    "role": "system",
+                    "content": "You are a product manager assigning priorities to requirements. Respond only with a number between 1 and 10."
+                },
+                {
+                    "role": "user",
+                    "content": f"Assign a priority (1-10) to the following requirement: {requirement.description}"
+                }
+            ]
         )
-        priority = int(ai_response.choices[0].text.strip())
+        priority = int(ai_response.choices[0].message.content.strip())
         requirement.priority = priority
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"AI Priority Assignment Failed: {e}")
+        raise HTTPException(status_code=500, detail=f"AI Priority Assignment Failed: {str(e)}")
 
     requirements_db.append(requirement)
     return requirement
