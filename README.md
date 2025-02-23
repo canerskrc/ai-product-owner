@@ -2,6 +2,46 @@
 
 This is a FastAPI-based application that simulates a Product Owner powered by AI. It can manage requirements, prioritize tasks using AI, and handle feedback.
 
+The AI-Driven Product Owner is an AI-powered application designed to streamline and optimize software development processes. Built with the FastAPI framework, this project simulates the responsibilities of a Product Owner. By leveraging artificial intelligence, it automates tasks such as requirement prioritization, user feedback collection, and analysis, significantly improving efficiency and accuracy in project management.
+
+## Key Features of the Project
+
+### Requirement Management:
+
+Collects and organizes project requirements.
+Automatically assigns priority levels to requirements using artificial intelligence.
+
+### Feedback Management:
+
+Captures user feedback and links it to relevant requirements.
+Helps teams make agile adjustments based on real user needs.
+
+### API Support (FastAPI):
+
+Provides a user-friendly interface and documentation, making the API easy to integrate into existing workflows.
+
+### AI Integration:
+
+Uses OpenAI to analyze and prioritize requirements through Natural Language Processing (NLP).
+
+### Portability with Docker:
+
+Fully containerized with Docker, allowing for easy deployment and portability across environments.
+
+### CI/CD Pipelines:
+
+Implements GitHub Actions for automated Continuous Integration (CI) and Continuous Deployment (CD) workflows.
+
+## Who Is This Project For?
+
+Project Managers: Professionals seeking to manage software projects more effectively.
+
+Software Developers: Teams looking for a streamlined tool to handle requirement management and prioritization.
+
+Startups and Agile Teams: Companies adopting agile methodologies that need an AI-powered solution to enhance productivity.
+
+Product Owners: Professionals who want to analyze feedback and optimize product development strategies.
+
 ## Features
 - Requirement management with AI-based prioritization.
 - Feedback management.
@@ -12,7 +52,7 @@ This is a FastAPI-based application that simulates a Product Owner powered by AI
 ## Installation
 1. Clone the repo:
    ```bash
-   git clone https://github.com/your-username/ai-product-owner.git
+   git clone https://github.com/canerskrc/ai-product-owner.git
    cd ai-product-owner
    ```
 2. Install dependencies:
