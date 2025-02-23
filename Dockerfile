@@ -1,20 +1,19 @@
-# Use the official Python image as a base image
+# Resmi Python 3.9 slim tabanlı image kullanılıyor
 FROM python:3.9-slim
 
-# Set the working directory in the container
+# Çalışma dizinini belirle
 WORKDIR /app
 
-# Copy requirements file
-COPY requirements.txt requirements.txt
+# Bağımlılık dosyasını kopyala ve bağımlılıkları yükle
+COPY requirements.txt .
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir -r requirements.txt
 
-# Install dependencies
-RUN pip install --no-cache-dir -r requirements.txt
-
-# Copy application code
+# Tüm uygulama dosyalarını kopyala
 COPY . .
 
-# Expose the port FastAPI runs on
+# FastAPI'nin çalışacağı portu tanımla
 EXPOSE 8000
 
-# Command to run the application
+# Konteyner başlatıldığında uygulamayı calistir
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
