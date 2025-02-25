@@ -1,0 +1,25 @@
+# FastAPI ve web sunucusu
+fastapi
+uvicorn
+
+# Veritabanı ve ORM
+sqlalchemy
+psycopg2
+
+# Authentication 
+passlib[bcrypt]
+python-jose
+python-dotenv
+
+redis
+openai>=1.0.0
+
+# Database migration (Alembic)
+alembic
+
+# API Rate Limiting
+fastapi-limiter
+
+# Tests
+pytest
+httpx
