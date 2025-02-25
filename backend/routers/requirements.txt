@@ -1,8 +1,7 @@
-# FastAPI ve web sunucusu
+
 fastapi
 uvicorn
-
-# Veritabanı ve ORM
+# Database and ORM
 sqlalchemy
 psycopg2
 
