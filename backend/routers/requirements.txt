@@ -4,7 +4,7 @@ uvicorn
 # Database and ORM
 sqlalchemy
 psycopg2
-
+ 
 # Authentication 
 passlib[bcrypt]
 python-jose
