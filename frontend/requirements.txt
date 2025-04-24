@@ -1,0 +1,6 @@
+streamlit==1.32.2
+requests==2.31.0
+pydantic==2.6.3
+python-dotenv==1.0.1
+streamlit-json-editor==0.1.12
+emoji==2.11.1

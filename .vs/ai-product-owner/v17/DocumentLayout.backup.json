@@ -1,0 +1,144 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\LENOVO\\Desktop\\ai-product-owner\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\Desktop\\ai-product-owner\\frontend\\config.toml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\config.toml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\Desktop\\ai-product-owner\\frontend\\.streamlit||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\.streamlit||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\Desktop\\ai-product-owner\\frontend\\components\\task_breakdown.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\components\\task_breakdown.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\Desktop\\ai-product-owner\\frontend\\components\\sprint_report.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:frontend\\components\\sprint_report.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\Desktop\\ai-product-owner\\backend\\app\\main.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\app\\main.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\Desktop\\ai-product-owner\\backend\\app\\utils\\token.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\app\\utils\\token.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\LENOVO\\Desktop\\ai-product-owner\\backend\\app\\routers\\auth.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:backend\\app\\routers\\auth.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "config.toml",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\ai-product-owner\\frontend\\config.toml",
+              "RelativeDocumentMoniker": "frontend\\config.toml",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\ai-product-owner\\frontend\\config.toml",
+              "RelativeToolTip": "frontend\\config.toml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKISURBVDhPtZRBTxpBFMd/gCyRWnVdJphVIhhWT3rT72BMG5p6qGliY9P6SfwCnvwI9KAJJe3VqzEe1SAHG8OBABUqKKLI7vYyY5aVND20/\u002BQlm5l9vzfz3rwH/1Ku6wZ8S2EgBrwAQr49v2ygDVwBj2rRC9SB10AGSAGaZ2\u002BQusAlkAdyQMO7GQY\u002BAGUZ2flLs4EK8EkynjQpozyDhcNhZ2lpyRFCOMFg0A9U0G\u002BACRCUwJdA0puCYDDIzMwMW1tbLC8vMzw8zMLCAmNjYwQCfakPyBSN4Em8AN7LgmCaJisrK2QyGcbHx2k0GlQqFUzTxLIsdF3HcRxubm4UtAV8Aa5UqHl55XmAtbU1NjY2SKVSuK7L3d0d9XqdSCSCpmnYtk0ul2NnZ0cBfwCvgII6YQx4p04Yi8W4vb0lEomwuLiIZVlYlkUikcAwDGzbZm9vj2KxqIC/gCxwNRA4PT1Ns9mkWCxydHTE6Ogo8Xic6\u002BtrOp0O2WyWw8NDqtXqM6AqSp9CoRC9Xo92u02pVGJ3d5darUa32\u002BX09JSDgwPu7\u002B/9buCpcp\u002BGhoaIRqMYhkE6nSaRSOA4Dg8PD5ycnNBqtXh8fGqOPg0EqicyNzeHEALDMHBdl06nw\u002BzsLOvr6ySTSb8b\u002BICu\u002Bjg\u002BPqZUKjE1NYVpmgghsG2bXq\u002BHruuUy2XOz889rrjKXxVlAngLxAHa7TaFQoGLiwvS6TRCCIQQnJ2dsb29TT6fp9lseoFV\u002BQ7ramES\u002BDqo9TRNc1ZXV53NzU0nGo36207Zd9V6SmHgo2z0Z9A/mA3UgM9qOnmbcgJ4Iy0lg/jnpZIrZ\u002BClvNm\u002Buq7fQZOPe8RTMP8/qniOHLA/5Wz8P/oN/swBV6jrMtwAAAAASUVORK5CYII=",
+              "WhenOpened": "2025-04-24T21:38:00.475Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": ".streamlit",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\ai-product-owner\\frontend\\.streamlit",
+              "RelativeDocumentMoniker": "frontend\\.streamlit",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\ai-product-owner\\frontend\\.streamlit",
+              "RelativeToolTip": "frontend\\.streamlit",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-24T21:37:38.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "task_breakdown.py",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\ai-product-owner\\frontend\\components\\task_breakdown.py",
+              "RelativeDocumentMoniker": "frontend\\components\\task_breakdown.py",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\ai-product-owner\\frontend\\components\\task_breakdown.py",
+              "RelativeToolTip": "frontend\\components\\task_breakdown.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-04-24T21:35:27.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "sprint_report.py",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\ai-product-owner\\frontend\\components\\sprint_report.py",
+              "RelativeDocumentMoniker": "frontend\\components\\sprint_report.py",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\ai-product-owner\\frontend\\components\\sprint_report.py",
+              "RelativeToolTip": "frontend\\components\\sprint_report.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-04-24T21:35:24.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "main.py",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\ai-product-owner\\backend\\app\\main.py",
+              "RelativeDocumentMoniker": "backend\\app\\main.py",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\ai-product-owner\\backend\\app\\main.py",
+              "RelativeToolTip": "backend\\app\\main.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-04-24T21:25:51.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "token.py",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\ai-product-owner\\backend\\app\\utils\\token.py",
+              "RelativeDocumentMoniker": "backend\\app\\utils\\token.py",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\ai-product-owner\\backend\\app\\utils\\token.py",
+              "RelativeToolTip": "backend\\app\\utils\\token.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-04-24T21:25:48.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "auth.py",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Desktop\\ai-product-owner\\backend\\app\\routers\\auth.py",
+              "RelativeDocumentMoniker": "backend\\app\\routers\\auth.py",
+              "ToolTip": "C:\\Users\\LENOVO\\Desktop\\ai-product-owner\\backend\\app\\routers\\auth.py",
+              "RelativeToolTip": "backend\\app\\routers\\auth.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-04-24T21:25:47.136Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

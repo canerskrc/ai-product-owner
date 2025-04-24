@@ -1,166 +1,130 @@
-# AI-Driven Product Owner
+#  AI Product Owner Agent
 
-This is a FastAPI-based application that simulates a Product Owner powered by AI. It can manage requirements, prioritize tasks using AI, and handle feedback.
+An autonomous AI agent that integrates with Jira and acts like a real Product Owner:
+- Creates technical tasks from plain feature requests
+- Analyzes sprint progress and developer load
+- Posts smart, daily, and sprint-end reports
 
-The AI-Driven Product Owner is an AI-powered application designed to streamline and optimize software development processes. Built with the FastAPI framework, this project simulates the responsibilities of a Product Owner. By leveraging artificial intelligence, it automates tasks such as requirement prioritization, user feedback collection, and analysis, significantly improving efficiency and accuracy in project management.
+Built with **FastAPI** + **Streamlit** + **OpenAI** + **Jira API** + **Docker Compose** 💼
 
-## Key Features of the Project
+---
 
-### Requirement Management:
+##  Features
 
-Collects and organizes project requirements.
-Automatically assigns priority levels to requirements using artificial intelligence.
+| Module | Description |
+|--------|-------------|
+|  Task Breakdown | Converts feature descriptions into Jira-ready tasks using GPT-4 |
+|  Sprint Reporter | AI-analyzes sprint data for bottlenecks, progress & team insights |
+|  Jira Integration | Auth, project fetch, and issue creation via OAuth2 |
+|  Streamlit UI | Investor-ready professional agent interface |
+|  Redis Enabled | Async caching and queue-ready agent structure |
 
-### Feedback Management:
+---
 
-Captures user feedback and links it to relevant requirements.
-Helps teams make agile adjustments based on real user needs.
+##  Quick Start (Docker Compose)
 
-### API Support (FastAPI):
-
-Provides a user-friendly interface and documentation, making the API easy to integrate into existing workflows.
-
-### AI Integration:
-
-Uses OpenAI to analyze and prioritize requirements through Natural Language Processing (NLP).
-
-### Portability with Docker:
-
-Fully containerized with Docker, allowing for easy deployment and portability across environments.
-
-### CI/CD Pipelines:
-
-Implements GitHub Actions for automated Continuous Integration (CI) and Continuous Deployment (CD) workflows.
-
-## Who Is This Project For?
-
-Project Managers: Professionals seeking to manage software projects more effectively.
-
-Software Developers: Teams looking for a streamlined tool to handle requirement management and prioritization.
-
-Startups and Agile Teams: Companies adopting agile methodologies that need an AI-powered solution to enhance productivity.
-
-Product Owners: Professionals who want to analyze feedback and optimize product development strategies.
-
-## Features
-- Requirement management with AI-based prioritization.
-- Feedback management.
-- API documentation at `/docs`.
-- Docker support for containerized deployment.
-- CI/CD pipeline configuration using GitHub Actions.
-
-## Installation
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/canerskrc/ai-product-owner.git
-   cd ai-product-owner
-   ```
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Run the app:
-   ```bash
-   uvicorn main:app --reload
-   ```
-
-## Docker Support
-To run the application using Docker:
-1. Build the Docker image:
-   ```bash
-   docker build -t ai-product-owner .
-   ```
-2. Run the Docker container:
-   ```bash
-   docker run -p 8000:8000 ai-product-owner
-   ```
-3. Access the application at [http://localhost:8000/docs](http://localhost:8000/docs).
-
-## CI/CD Pipeline
-A sample GitHub Actions workflow is included in `.github/workflows/main.yml` for CI/CD.
-
-### Features:
-- **Linting:** Ensures code quality with `flake8`.
-- **Testing:** Runs tests using `pytest`.
-- **Docker Build:** Builds the Docker image.
-
-### Example Workflow:
-```yaml
-name: CI/CD Pipeline
-
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: 3.9
-
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
-
-    - name: Run tests
-      run: pytest
-
-    - name: Lint code
-      run: flake8 .
-
-    - name: Build Docker image
-      run: |
-        docker build -t ai-product-owner .
+### 1. Clone the repository
+```bash
+git clone https://github.com/your-org/ai-product-owner.git
+cd ai-product-owner
 ```
 
-## Testing
-To run tests:
+### 2. Add your environment variables
+Create a `.env` file in root:
+```env
+OPENAI_API_KEY=your-openai-key
+DATABASE_URL=postgresql://user:pass@db/dbname
+REDIS_HOST=redis
+REDIS_PORT=6379
+JIRA_CLIENT_ID=...
+JIRA_CLIENT_SECRET=...
+JIRA_REDIRECT_URI=http://localhost:8000/jira/callback
+```
+
+### 3. Build and start the stack
 ```bash
+docker-compose up --build
+```
+
+### 4. Access the app
+- **Backend (FastAPI):** http://localhost:8000/docs
+- **Frontend (Streamlit):** http://localhost:8501
+
+---
+
+##  How It Works
+
+### 1. Feature → Task Breakdown
+```json
+{
+  "feature_description": "Add email notifications"
+}
+```
+⟶ Returns:
+```json
+{
+  "tasks": ["Design notification schema", "Integrate with SendGrid", ...]
+}
+```
+
+### 2. Sprint Analyzer
+```json
+{
+  "team_data": {"alice": 4, "murat": 2},
+  "issues": [ {"title": "Bug fix", "status": "done", "assignee": "murat"} ]
+}
+```
+⟶ Returns: AI-written performance summary.
+
+---
+
+## 📁 Project Structure
+
+```
+project-root/
+├── backend/
+│   ├── app/        # FastAPI application
+│   ├── Dockerfile
+│   └── requirements.txt
+├── frontend/
+│   ├── app.py      # Streamlit UI
+│   ├── .streamlit/config.toml
+│   ├── Dockerfile
+│   └── requirements.txt
+├── docker-compose.yml
+├── .env
+└── README.md
+```
+
+---
+
+##  Testing
+```bash
+cd backend
 pytest
 ```
 
-## API Endpoints
-### `/requirements` (GET)
-- Fetch the list of requirements.
+---
 
-### `/requirements` (POST)
-- Add a new requirement.
-- **Request Body Example:**
-  ```json
-  {
-      "id": 1,
-      "title": "Dark mode",
-      "description": "Add dark mode to the app."
-  }
-  ```
+##  Tech Stack
 
-### `/feedback` (POST)
-- Add feedback for a specific requirement.
-- **Request Body Example:**
-  ```json
-  {
-      "requirement_id": 1,
-      "feedback_text": "Dark mode is essential for night users."
-  }
-  ```
+- [FastAPI](https://fastapi.tiangolo.com/) 
+- [OpenAI GPT-4](https://platform.openai.com/docs)
+- [Jira REST API](https://developer.atlassian.com/cloud/jira/platform/rest/v3/)
+- [Streamlit](https://streamlit.io/) UI
+- [Docker Compose](https://docs.docker.com/compose/) 📦
+- [Redis](https://redis.io/) for caching & task pub/sub
 
-### `/feedback/{requirement_id}` (GET)
-- Get feedback for a specific requirement.
+---
 
-## License
-This project is licensed under the MIT License.
+##  Ideal Use Cases
+- Agile Product Teams with complex roadmaps
+- AI-augmented Project Management
+- Investor / Demo-ready AI prototypes
 
-## Contributing
-Feel free to submit issues or pull requests to contribute to the project. For major changes, please open an issue first to discuss your ideas.
+---
+
+##  Contact / License
+**Author**: Caner Sekerci / Atıl Samancıoglu  
+**License**: 
+**Contact**: [LinkedIn] ( https://www.linkedin.com/in/canersekerci/ )
