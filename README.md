@@ -25,7 +25,7 @@ Built with **FastAPI** + **Streamlit** + **OpenAI** + **Jira API** + **Docker Co
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-org/ai-product-owner.git
+git clone https://github.com/canerskrc/ai-product-owner.git
 cd ai-product-owner
 ```
 
@@ -70,7 +70,7 @@ docker-compose up --build
 ### 2. Sprint Analyzer
 ```json
 {
-  "team_data": {"alice": 4, "murat": 2},
+  "team_data": {"ahmet": 4, "murat": 2},
   "issues": [ {"title": "Bug fix", "status": "done", "assignee": "murat"} ]
 }
 ```
@@ -125,6 +125,5 @@ pytest
 ---
 
 ##  Contact / License
-**Author**: Caner Sekerci / Atıl Samancıoglu  
-**License**: 
+**Authors**: Caner Sekerci / Atıl Samancıoglu  
 **Contact**: [LinkedIn] ( https://www.linkedin.com/in/canersekerci/ )
