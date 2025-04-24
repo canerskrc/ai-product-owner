@@ -112,7 +112,7 @@ pytest
 - [OpenAI GPT-4](https://platform.openai.com/docs)
 - [Jira REST API](https://developer.atlassian.com/cloud/jira/platform/rest/v3/)
 - [Streamlit](https://streamlit.io/) UI
-- [Docker Compose](https://docs.docker.com/compose/) 📦
+- [Docker Compose](https://docs.docker.com/compose/) 
 - [Redis](https://redis.io/) for caching & task pub/sub
 
 ---
