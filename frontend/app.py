@@ -1,21 +1,29 @@
 import streamlit as st
-from components.task_breakdown import task_breakdown_ui
-from components.sprint_report import sprint_report_ui
+from components.ai_product_owner import ai_product_owner_ui
 
 st.set_page_config(
-    page_title="AI Product Owner Agent",
+    page_title="AI Product Owner",
     page_icon="🤖",
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
-st.sidebar.image("static/logo.png", use_column_width=True)
-st.sidebar.title("AI Product Owner")
-st.sidebar.caption("Your Autonomous Assistant")
+# Custom CSS
+st.markdown("""
+    <style>
+    .main {
+        padding: 2rem;
+    }
+    .stButton>button {
+        width: 100%;
+    }
+    .metric-card {
+        background-color: #f0f2f6;
+        padding: 1rem;
+        border-radius: 0.5rem;
+    }
+    </style>
+""", unsafe_allow_html=True)
 
-menu = st.sidebar.radio("Navigation", ["🧠 Generate Tasks", "📊 Sprint Report"])
-
-if menu == "🧠 Generate Tasks":
-    task_breakdown_ui()
-elif menu == "📊 Sprint Report":
-    sprint_report_ui()
+# Main application
+ai_product_owner_ui()
