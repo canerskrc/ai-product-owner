@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python Version](https://img.shields.io/badge/python-3.9%2B-blue)](https://www.python.org/downloads/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.68.1-green)](https://fastapi.tiangolo.com/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.109.2-green)](https://fastapi.tiangolo.com/)
 [![OpenAI](https://img.shields.io/badge/OpenAI-GPT4-purple)](https://openai.com/)
 
 ## 🚀 Overview
@@ -62,7 +62,7 @@ AI Product Owner is a cutting-edge AI-powered project management solution that r
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-org/ai-product-owner.git
+git clone https://github.com/canerskrc/ai-product-owner.git
 cd ai-product-owner
 ```
 
